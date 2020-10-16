@@ -114,7 +114,7 @@ Binaries available for:
 - Windows
 
 # Build
-
+ 
 ### Requirements
 
 - Latest `rust` and `cargo`
