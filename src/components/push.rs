@@ -144,7 +144,7 @@ impl DrawableComponent for PushComponent {
             f.render_widget(Clear, area);
             f.render_widget(
                 Gauge::default()
-                    .label(state.as_str())
+                    .label(progress.to_string().as_str())
                     .block(
                         Block::default()
                             .title(Span::styled(
@@ -155,7 +155,7 @@ impl DrawableComponent for PushComponent {
                             .border_type(BorderType::Thick)
                             .border_style(self.theme.block(true)),
                     )
-                    .style(
+                    .gauge_style(
                         Style::default()
                             .fg(Color::White)
                             .bg(Color::Black), // .modifier(Modifier::ITALIC),
