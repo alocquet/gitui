@@ -109,7 +109,7 @@ impl PushComponent {
                 (
                     Self::progress_state_name(&progress.state),
                     progress.progress,
-                )
+                ) 
             },
         )
     }
